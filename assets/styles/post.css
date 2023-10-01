@@ -1,0 +1,136 @@
+.post-header {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--size-2xl);
+  gap: var(--size-xs);
+}
+
+.post-description {
+  font-size: var(--h4);
+  color: var(--muted);
+}
+
+.post-meta {
+  display: flex;
+  gap: var(--size-3xs);
+}
+
+.post-location {
+  font-weight: bold;
+}
+
+.post-image {
+  margin-top: var(--size-2xl);
+  margin-bottom: var(--size-xl);
+  text-align: center;
+  height: auto;
+}
+
+.post-image-before-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--size-2xl);
+  margin-bottom: var(--size-xl);
+  max-width: calc(100% - var(--size-s));
+}
+
+.post-image-before-new img {
+  max-width: calc(50vw - var(--size-4xl));
+  height: auto;
+}
+
+.post-image-before-new .arrow {
+  font-size: var(--size-3xl);
+  color: var(--primary);
+  margin: 0 var(--size-s);
+}
+
+.post-body {
+  color: color-mix(in srgb, var(--text) 80%, var(--background));
+}
+
+.post-body h3 {
+  font-size: var(--h3);
+  margin-top: var(--size-2xl);
+  margin-bottom: var(--size-s);
+  color: var(--text);
+}
+
+.post-body h4 {
+  font-size: var(--h4);
+  margin-top: var(--size-xl);
+  margin-bottom: var(--size-s);
+  color: var(--text);
+}
+
+.post-body p {
+  font-size: calc((var(--p) + var(--h5)) / 2);
+  margin-bottom: var(--size-s);
+}
+
+.post-body a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-body a:hover {
+  text-decoration: underline;
+}
+
+.post-body ul,
+ol {
+  margin-bottom: var(--size-s);
+  padding-left: var(--size-s);
+  color: var(--text);
+}
+
+.post-body li {
+  margin-bottom: var(--size-2xs);
+}
+
+.post-body blockquote {
+  background-color: var(--muted);
+  border-left: 10px solid var(--primary);
+  margin: var(--size-xl) 0;
+  padding: var(--size-2xs) var(--size-s);
+}
+
+.post-body strong {
+  font-weight: bold;
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-back {
+  margin: var(--size-4xl) 0;
+  text-align: center;
+}
+
+.post-back a {
+  font-size: var(--h3);
+  background-color: var(--primary);
+  color: var(--primary-contrast);
+  padding: var(--size-s) var(--size-m);
+  border-radius: var(--size-xs);
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--h2);
+  }
+  .post-body h3 {
+    font-size: var(--h4);
+  }
+  .post-body h4 {
+    font-size: var(--h5);
+  }
+  .post-description {
+    font-size: var(--h5);
+  }
+  .post-image {
+    margin-top: var(--size-l);
+    margin-bottom: var(--size-m);
+  }
+}

@@ -1,0 +1,4 @@
+{% assign mesos = "de gener,de febrer,de març,d'abril,de maig,de juny,de
+juliol,de agost,de setembre,d'octubre,de novembre,de desembre" | split: "," %}
+{% assign mes = include.date | date: "%m" | minus: 1 %} {% assign dia =
+include.date | date: "%-d" %} {{ dia }} {{ mesos[mes] }}

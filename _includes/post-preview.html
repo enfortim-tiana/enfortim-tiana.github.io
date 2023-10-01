@@ -1,0 +1,34 @@
+<article class="post-preview">
+  <div class="post-preview-metadata">
+    <div class="post-preview-location">{{include.post.location}}</div>
+    ·
+    <div class="post-preview-date">
+      {% include date.html date=include.post.date %}
+    </div>
+  </div>
+
+  <a href="{{include.post.url}}" class="post-preview-image">
+    {% if include.post.imageBefore %}
+    <img
+      src="{{ include.post.image }}"
+      class="new"
+      alt="{{ include.post.title }}"
+    />
+    <img
+      src="{{ include.post.imageBefore }}"
+      class="before"
+      alt="{{ include.post.title }}"
+    />
+    {% else %}
+    <img src="{{ include.post.image }}" alt="{{ include.post.title }}" />
+    {% endif %}
+  </a>
+
+  <a href="{{include.post.url}}" class="post-preview-title"
+    >{{include.post.title}}</a
+  >
+  <div class="post-preview-excerpt">{{include.post.excerpt}}</div>
+  <a class="post-preview-cta" href="{{ include.post.url }}">
+    Continuar llegint</a
+  >
+</article>

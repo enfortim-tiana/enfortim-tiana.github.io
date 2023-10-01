@@ -1,0 +1,20 @@
+.header {
+  background: var(--primary);
+  color: var(--primary-contrast);
+  padding: var(--size-xs) var(--size-s);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-group {
+  display: flex;
+  align-items: center;
+  gap: var(--size-s);
+}
+
+.header-brand {
+  font-size: var(--h5);
+  font-weight: 700;
+  text-decoration: none;
+}

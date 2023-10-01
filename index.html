@@ -1,0 +1,37 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Enfortim Tiana</title>
+    {% include styles.html %}
+  </head>
+  <body>
+    {% include header.html %}
+
+    <div class="hero-wrapper">
+      <div class="hero">
+        <h1>Enfortim Tiana</h1>
+        <p>
+          Fem de Tiana una vila més forta i sostenible. On no tan sols sigui un
+          lloc per viure, sinó també per passejar i gaudir.
+        </p>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="post-preview-list">
+        {% for post in site.posts %} {% include post-preview.html post=post %}
+        {% unless forloop.last %}
+        <hr class="post-preview-hr" />
+        {% endunless %} {% endfor %}
+      </div>
+    </main>
+
+    {% include footer.html %}
+    <footer style="text-align: center"></footer>
+  </body>
+</html>

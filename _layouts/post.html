@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include styles.html %}
+    <link rel="stylesheet" href="/assets/styles/post.css" />
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="container-sm">
+      <header class="post-header">
+        <div class="post-meta">
+          <div class="post-location">{{page.location}}</div>
+          ·
+          <div class="post-date">{% include date.html date=page.date %}</div>
+        </div>
+        <h1>{{ page.title }}</h1>
+        <div class="post-description">{{ page.description }}</div>
+      </header>
+    </div>
+    {% if page.imageBefore %}
+    <div class="post-image-before-new">
+      <img class="before" src="{{ page.imageBefore }}" />
+      <div class="arrow">➡️</div>
+      <img class="new" src="{{ page.image }}" />
+    </div>
+    {% else %}
+    <div class="post-image">
+      <img src="{{ page.image }}" />
+    </div>
+    {% endif %}
+    <main class="container-sm post-body">{{ content }}</main>
+    <div class="post-back"><a href="/">« Tornar</a></div>
+    {% include footer.html %}
+  </body>
+</html>

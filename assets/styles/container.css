@@ -1,0 +1,9 @@
+.container {
+  max-width: min(var(--size-11xl), calc(100% - var(--size-s)));
+  margin: 0 auto;
+}
+
+.container-sm {
+  max-width: min(var(--size-10xl), calc(100% - var(--size-s)));
+  margin: 0 auto;
+}

@@ -1,0 +1,10 @@
+.logo {
+  background: var(--primary);
+  width: var(--size-2xl);
+  border-radius: 100%;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
