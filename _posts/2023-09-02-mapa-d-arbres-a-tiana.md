@@ -6,8 +6,9 @@ description: |
   Aprèn com contribuir a la salut del teu entorn de manera fàcil.
   No et perdis aquesta oportunitat per a l'acció!
 location: Tiana
-image: /assets/imatges/MapaDArbres.jpg
+image: /assets/images/2023/MapaDArbres.jpg
 date: 2023-09-02
+author: drpicox
 ---
 
 La simbiosi entre la natura i la tecnologia és més que possible, i a Tiana n'hi ha una prova tangible. En col·laboració amb l'associació badalonina "Llefia@net", hem creat una eina digital que permet a tots els vilatans conèixer en detall la riquesa arbòria dels nostres carrers i parcs. En aquest article, explorarem la profunditat d'aquesta iniciativa i us explicarem com podeu formar part d'ella.

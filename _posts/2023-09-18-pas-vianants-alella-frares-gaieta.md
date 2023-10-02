@@ -5,9 +5,10 @@ description: |
   Estalviem un minut al vianant, i guanyem seguretat per a tots.
   Es proposa canviar la cruïlla per facilitar el pas dels vianants i augmentar la seguretat dels desplaçaments.
 location: Dalt d'Alella - Cals Frares - Can Gaietà
-imageBefore: /assets/imatges/Tiana-AlellaFraresGaieta.Abans.jpg
-image: /assets/imatges/Tiana-AlellaFraresGaieta.Nou.jpg
+imageBefore: /assets/images/2023/Tiana-AlellaFraresGaieta.Abans.jpg
+image: /assets/images/2023/Tiana-AlellaFraresGaieta.Nou.jpg
 date: 2023-09-12
+author: drpicox
 ---
 
 Actualment, la cruïlla entre el Camí de Dalt d'Alella, Cals Frares i Can Gaietà prioritza el pas de cotxes. Per un costat permet els cotxes provinents del Camí de Dalt d'Alella tant pujar per Can Gaietà com anar per Cals Frares sense fer cap maniobra. Per l'altre costat, es permet als cotxes provinents de Can Gaietà baixar per Cals Frares amb un gir obert. Totes dues permeten la circulació a més velocitat pel cotxe, que pot guanyar entre dos i fins a cinc segons en els seus desplaçaments.

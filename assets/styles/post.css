@@ -11,12 +11,38 @@
 }
 
 .post-meta {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: var(--size-3xs);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "avatar author"
+    "avatar location";
+}
+
+.post-avatar {
+  grid-area: avatar;
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  border-radius: 50%;
+  margin-right: var(--size-2xs);
+}
+
+.post-author {
+  grid-area: author;
+  font-weight: bold;
+  font-size: var(--h5);
 }
 
 .post-location {
+  grid-area: location;
   font-weight: bold;
+}
+
+.post-date {
+  grid-area: date;
+  color: var(--muted);
+  font-size: var(--p);
 }
 
 .post-image {

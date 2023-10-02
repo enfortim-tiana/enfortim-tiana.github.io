@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="/assets/styles/post.css" />
   </head>
   <body>
+    {% assign author = site.data.authors | where: "id", page.author | first %}
     {% include header.html %}
     <div class="container-sm">
       <header class="post-header">
         <div class="post-meta">
+          <img class="post-avatar" src="{{ author.avatar }}" />
+          <div class="post-author">
+            {{ author.name }}
+            <span class="post-date"
+              >· {% include date.html date=page.date %}</span
+            >
+          </div>
           <div class="post-location">{{page.location}}</div>
-          ·
-          <div class="post-date">{% include date.html date=page.date %}</div>
         </div>
         <h1>{{ page.title }}</h1>
         <div class="post-description">{{ page.description }}</div>

@@ -1,5 +1,10 @@
 <article class="post-preview">
   <div class="post-preview-metadata">
+    {% assign author = site.data.authors | where: "id", include.post.author |
+    first %}
+    <img class="post-preview-avatar" src="{{ author.avatar }}" />
+    <div class="post-preview-author">{{ author.name }}</div>
+    ·
     <div class="post-preview-location">{{include.post.location}}</div>
     ·
     <div class="post-preview-date">

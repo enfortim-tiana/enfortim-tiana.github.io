@@ -5,9 +5,10 @@ description: |
   Estalviem mig minut al vianant, i guanyem seguretat per a tots.
   Es proposa moure el pas de vianants per facilitar el pas dels vianants i augmentar la seguretat dels desplaçaments.
 location: Can Bruguera - Can Gaietà
-imageBefore: /assets/imatges/Tiana-BrugueraGaieta.Abans.jpg
-image: /assets/imatges/Tiana-BrugueraGaieta.Nou.jpg
+imageBefore: /assets/images/2023/Tiana-BrugueraGaieta.Abans.jpg
+image: /assets/images/2023/Tiana-BrugueraGaieta.Nou.jpg
 date: 2023-09-12
+author: drpicox
 ---
 
 Actualment, la cruïlla entre Can Bruguera i Can Gaietà s'obre en ventall per prioritzar el pas de cotxes. Això permet als vehicles girar a més velocitat i guanyar un parell de segons en els seus desplaçaments.

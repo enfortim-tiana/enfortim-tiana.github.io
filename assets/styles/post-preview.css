@@ -21,6 +21,13 @@
   align-items: center;
   gap: var(--size-3xs);
   color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.post-preview-avatar {
+  width: var(--size-l);
+  height: var(--size-l);
+  border-radius: 50%;
 }
 
 .post-preview-location {
