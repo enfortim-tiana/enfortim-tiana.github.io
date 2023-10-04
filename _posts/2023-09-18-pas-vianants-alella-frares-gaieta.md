@@ -37,7 +37,7 @@ Es proposa fer-ho zona de vianants per la diversitat de rutes que segueixen els 
 **Els beneficis:**
 
 - Més facilitat per fer desplaçaments a peu.
-- Més seguretat i més incentius per cercar alternatives al poble.
+- Més seguretat i més incentius per cercar alternatives dins del poble.
 - Més espai per gaudir i passejar per Tiana.
 
 Cal destacar que incentivar desplaçaments a peu, redueix el nombre de viatges requerits en cotxe, és més sostenible, i caminar aporta beneficis per a la salut.
