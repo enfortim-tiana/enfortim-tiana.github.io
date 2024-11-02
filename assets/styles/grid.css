@@ -1,0 +1,310 @@
+/* Layout utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Spacing utilities */
+.p-8 {
+    padding: 2rem;
+}
+
+.py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* Alignment utilities */
+.text-center {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Max width utilities */
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+/* Typography utilities */
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-gray-700 {
+    color: #374151;
+}
+
+/* Image utilities */
+.img-full {
+    width: 100%;
+    height: auto;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* Background utilities */
+.bg-gray-50 {
+    background-color: #F9FAFB;
+}
+
+/* Responsive utilities */
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+
+    .md\:w-1\/2 {
+        width: 50%;
+    }
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Card utilities */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+/* Spacing utilities */
+.p-4 {
+    padding: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+/* Image utilities */
+.aspect-video {
+    aspect-ratio: 16 / 9;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.object-top {
+    object-position: top;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+/* Avatar utilities */
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+}
+
+/* Typography utilities */
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-gray-600 {
+    color: #4B5563;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.hover\:underline:hover {
+    text-decoration: underline;
+}
+
+/* Previous grid and card utilities remain the same */
+
+/* Metadata layout utilities */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+/* Author avatar */
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+/* Typography utilities */
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.text-gray-500 {
+    color: #6B7280;
+}
+
+.text-gray-600 {
+    color: #4B5563;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+/* Divider utility */
+.divider {
+    color: #D1D5DB;
+    margin: 0 0.25rem;
+}
+
+/* Metadata group */
+.metadata-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Previous grid and card utilities remain the same */
+
+/* Metadata layout utilities */
+.space-y-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+/* Metadata item styling */
+.metadata-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: #6B7280;
+}
+
+/* Emoji sizing */
+.emoji {
+    font-size: 0.7rem;
+    line-height: 1;
+    display: inline-block;
+    width: 1rem;
+}

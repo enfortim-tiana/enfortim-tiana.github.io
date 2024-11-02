@@ -2,7 +2,7 @@
 :root:not([data-theme="dark"]) {
   --text: #0d1521;
   --background: #ffffff;
-  --primary: #534022;
+  --primary: #64a161;
   --secondary: #ecefd7;
   --accent: #b15548;
   --primary-contrast: #ffffff;

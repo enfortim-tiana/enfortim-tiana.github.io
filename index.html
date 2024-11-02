@@ -12,22 +12,70 @@
   <body>
     {% include header.html %}
 
-    <div class="hero-wrapper">
-      <div class="hero">
-        <h1>Enfortim Tiana</h1>
-        <p>
-          Fem de Tiana una vila més forta i sostenible. On no tan sols sigui un
-          lloc per viure, sinó també per passejar i gaudir.
-        </p>
+    <div class="container py-16">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2 text-center">
+          <h1 class="text-8xl font-bold mb-4">Enfortim Tiana</h1>
+          <p class="text-lg text-gray-700">
+            Fem de Tiana una vila més forta i sostenible. On no tan sols sigui un
+            lloc per viure, sinó també per passejar i gaudir.
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img
+                  src="/assets/images/altres/happy-family.jpeg"
+                  alt="Happy Family"
+                  class="img-full rounded-lg"
+          />
+        </div>
       </div>
     </div>
 
     <main class="container">
-      <div class="post-preview-list">
-        {% for post in site.posts %} {% include post-preview.html post=post %}
-        {% unless forloop.last %}
-        <hr class="post-preview-hr" />
-        {% endunless %} {% endfor %}
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {% for post in site.posts %}
+        <article class="card">
+          <a href="{{post.url}}" class="block">
+            <img
+                    src="{{ post.image }}"
+                    class="w-full aspect-video object-cover object-top"
+                    alt="{{ post.title }}"
+            />
+          </a>
+
+          <div class="p-4">
+            <div class="space-y-1 mb-4">
+              {% assign author = site.data.authors | where: "id", post.author | first %}
+              <div class="metadata-item">
+                <span class="emoji">👤</span>
+                <span>{{ author.name }}</span>
+              </div>
+              {% if post.location %}
+              <div class="metadata-item">
+                <span class="emoji">📍</span>
+                <span>{{post.location}}</span>
+              </div>
+              {% endif %}
+              <div class="metadata-item">
+                <span class="emoji">📅</span>
+                <span>{% include date.html date=post.date %}</span>
+              </div>
+            </div>
+
+            <a href="{{post.url}}" class="block mb-2 text-xl font-semibold no-underline hover:underline">
+              {{post.title}}
+            </a>
+
+            <div class="mb-4 text-gray-600">
+              {{post.excerpt}}
+            </div>
+
+            <a href="{{ post.url }}" class="text-sm font-semibold hover:underline">
+              Continuar llegint
+            </a>
+          </div>
+        </article>
+        {% endfor %}
       </div>
     </main>
 
